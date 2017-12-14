@@ -1,5 +1,5 @@
 <?php
-
+//require is used to add the fpdf library in the page in order to be able to create a pdf ile from php
 require('fpdf.php');
 
 require'connect.php';
@@ -21,7 +21,7 @@ if (isset($id)) {
 
 	//var_dump($row);
 
-
+        //By using the functions below the php can be changed to pdf 
 	$pdf = new FPDF();
 	$pdf->AddPage();
 	$pdf->SetFont('Arial','B',16);
